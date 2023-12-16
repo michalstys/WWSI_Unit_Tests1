@@ -8,6 +8,6 @@ namespace WWSI_App1.Lib
 {
     public interface IValidator
     {
-        bool IsValid(string password);
+        bool IsValid(string inputString);
     }
 }
