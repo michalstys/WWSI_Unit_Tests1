@@ -18,6 +18,8 @@ namespace Unit_Tests
         [InlineData("john@smith@company.com", false)]
         [InlineData("john", false)]
         [InlineData("", false)]
+        [InlineData("john.smith@company!@#.com", false)]
+        [InlineData("john.smith@company@com", false)]
         public void ValidateEmail(string email, bool expectedResult)
         {
             //Arrange
