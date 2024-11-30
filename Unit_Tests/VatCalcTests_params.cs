@@ -28,6 +28,8 @@ namespace Unit_Tests
         [InlineData(23, 500, 406.50)]
         [InlineData(23, 201, 163.41)]
         [InlineData(23, 202.50, 164.63)]
+        [InlineData(23, 202.55, 164.67)]
+        [InlineData(23, 202.60, 164.72)]
         [InlineData(23, 66.42, 54)]
         [InlineData(8, 66.42, 61.5)]
         public void TestVatCalc_Net(int vatValuePercent, decimal grossValue, decimal netValue)

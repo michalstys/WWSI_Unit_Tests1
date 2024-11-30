@@ -30,6 +30,7 @@
         private static decimal RoundResult(decimal result)
         {
             return decimal.Round(result, 2, MidpointRounding.AwayFromZero);
+
         }
     }
 }
